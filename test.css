@@ -1,0 +1,106 @@
+<style>
+body
+{
+    width: 1920;
+    height: 53px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+#page-navigation ul li
+{
+    color: white;
+    list-style: none;
+    background-color: darkslategray;
+    width: 9em;
+    float: left;
+}
+
+li
+{
+    position: relative;
+}
+
+li.title
+{
+    display: none;   
+}
+
+li a
+{
+    display: block;
+    color: white;
+    line-height: 1.3em;
+    padding: 1em;
+    text-align: center;
+}
+
+li a:link
+{
+    text-decoration: none;
+}
+
+li a:visited
+{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover, .top-menu > li:hover > a
+{
+    background-color: rgb(48,48,48);
+}
+
+li a:active
+{
+    background-color: dimgray;
+}
+
+ul.sub-menu
+{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: -9000em;
+    overflow: hidden;
+}
+
+ul.sub-menu li
+{
+    clear: left;
+    float: none;
+    margin-left: -2.5em;
+    z-index: 1000;
+}
+
+.top-menu li:hover ul
+{
+    left: 0;
+}
+
+ul.sub-menu li a
+{
+    height: auto;
+    border-bottom: 1px solid gray;
+    padding: .4em 1em;
+    background-color: dimgray;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+ul.sub-menu li:last-child a
+{
+    border-bottom: none;
+}
+
+ul.sub-menu li a:hover
+{
+    background-color: darkslategray;
+}
+
+ul.sub-menu li a:active
+{
+    background-color: gray;
+}
+</style>
